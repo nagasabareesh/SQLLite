@@ -36,6 +36,7 @@ class Item(Resource):
         item = next(filter(lambda x:x['name']==name,items), None)
         return {'Item':item}, 200 if item else 404
 
+
 api.add_resource(Item, '/item/<string:name>')
 api.add_resource(UserRegister, '/register')
-newapp.run(port=50000)
+newapp.run(host='0.0.0.0',port=50000)

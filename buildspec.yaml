@@ -12,4 +12,4 @@ phases:
       - echo Build started on `date`
       - echo Building the Docker image...          
       # - docker build -t $DOCKER_REGISTRY/$DOCKER_REGISTRY::$TAG .
-      - docker build -t mypythonapp:nagag
+      - docker build . -t mypythonapp:nagag
